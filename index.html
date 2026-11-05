@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Sarah's Coffee Corner</title>
+
+    <link rel="stylesheet"
+          href="styles.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         TOP BAR
+    ===================================================== -->
+
+    <div class="top-bar">
+
+        <div class="small-logo">
+            ☕ Sarah's Coffee Corner
+        </div>
+
+        <div class="business-hours">
+
+            <span>
+                🕐 Opening: <strong>8:00 AM</strong>
+            </span>
+
+            <span>
+                🕙 Closing: <strong>10:00 PM</strong>
+            </span>
+
+            <span id="opening-status">
+                Checking...
+            </span>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         HEADER + NAVIGATION
+    ===================================================== -->
+
+    <header>
+
+        <nav>
+
+            <div class="logo">
+                SARAH'S
+            </div>
+
+            <div class="nav-links">
+
+                <a href="#home">Home</a>
+
+                <a href="#about">About</a>
+
+                <a href="#menu">Menu</a>
+
+                <a href="#order">Order</a>
+
+                <a href="#contact">Contact</a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         HERO / MAIN SECTION
+    ===================================================== -->
+
+    <main>
+
+        <section id="home"
+                 class="hero">
+
+            <div class="hero-content">
+
+                <p class="small-heading">
+                    WELCOME TO SARAH'S
+                </p>
+
+                <h1>
+                    Fresh Coffee.
+                    Happy Moments.
+                </h1>
+
+                <p>
+                    A warm and friendly café where you can enjoy
+                    delicious coffee, fresh pastries and relaxing
+                    moments with your friends and family.
+                </p>
+
+                <a href="#menu"
+                   class="hero-button">
+                    Explore Our Menu
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             IMAGE SECTION
+        ===================================================== -->
+
+        <section class="image-section">
+
+            <div class="image-container">
+
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=80"
+                     alt="Fresh coffee served in a cozy cafe">
+
+            </div>
+
+            <div class="image-text">
+
+                <p class="section-label">
+                    OUR CAFE
+                </p>
+
+                <h2>
+                    Your Cozy Place to Relax
+                </h2>
+
+                <p>
+                    Whether you want to study, meet friends or
+                    simply enjoy a cup of coffee, Sarah's Coffee
+                    Corner is the perfect place to slow down.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             TASK 3: LIGHT / DARK MODE
+        ===================================================== -->
+
+        <section class="theme-section">
+
+            <p class="section-label">
+                PERSONALIZE YOUR EXPERIENCE
+            </p>
+
+            <h2>
+                Choose Your Website Theme
+            </h2>
+
+            <p>
+                You can switch between light and dark mode.
+            </p>
+
+            <button id="theme-btn">
+                Toggle Light/Dark Mode
+            </button>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             ABOUT SECTION
+        ===================================================== -->
+
+        <section id="about"
+                 class="about-section">
+
+            <p class="section-label">
+                ABOUT US
+            </p>
+
+            <h2>
+                Why Customers Love Our Cafe
+            </h2>
+
+
+            <!-- 3 CARDS -->
+
+            <div class="cards">
+
+
+                <article class="card">
+
+                    <div class="card-icon">
+                        ☕
+                    </div>
+
+                    <h3>
+                        Fresh Coffee
+                    </h3>
+
+                    <p>
+                        We prepare fresh and delicious coffee
+                        for our customers every day.
+                    </p>
+
+                </article>
+
+
+                <article class="card">
+
+                    <div class="card-icon">
+                        🥐
+                    </div>
+
+                    <h3>
+                        Fresh Pastries
+                    </h3>
+
+                    <p>
+                        Enjoy tasty croissants, muffins and
+                        other freshly prepared bakery items.
+                    </p>
+
+                </article>
+
+
+                <article class="card">
+
+                    <div class="card-icon">
+                        ❤️
+                    </div>
+
+                    <h3>
+                        Friendly Place
+                    </h3>
+
+                    <p>
+                        Our café provides a comfortable
+                        environment for everyone.
+                    </p>
+
+                </article>
+
+
+            </div>
+
+
+            <!-- =================================================
+                 ALPHABETICAL LIST REQUIREMENT
+            ================================================== -->
+
+            <div class="alphabet-list">
+
+                <h3>
+                    A Few Things We Offer
+                </h3>
+
+                <ol type="A">
+
+                    <li>
+                        Amazing Coffee
+                    </li>
+
+                    <li>
+                        Bakery Fresh Pastries
+                    </li>
+
+                    <li>
+                        Comfortable Seating
+                    </li>
+
+                    <li>
+                        Delicious Desserts
+                    </li>
+
+                    <li>
+                        Friendly Service
+                    </li>
+
+                </ol>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             TASK 7: LIVE CATEGORY FILTER
+        ===================================================== -->
+
+        <section id="menu"
+                 class="menu-section">
+
+            <p class="section-label">
+                OUR MENU
+            </p>
+
+            <h2>
+                Choose Something Delicious
+            </h2>
+
+            <p>
+                Use the buttons below to filter our menu.
+            </p>
+
+
+            <div class="filter-buttons">
+
+                <button class="filter-btn"
+                        data-category="all">
+                    All
+                </button>
+
+                <button class="filter-btn"
+                        data-category="drinks">
+                    ☕ Drinks
+                </button>
+
+                <button class="filter-btn"
+                        data-category="pastries">
+                    🥐 Pastries
+                </button>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 TASK 2: TABLE ROW HIGHLIGHTING
+            ================================================== -->
+
+            <div class="table-container">
+
+                <table id="menu-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Item</th>
+
+                            <th>Category</th>
+
+                            <th>Price</th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr data-category="drinks">
+
+                            <td>Espresso</td>
+
+                            <td>Drinks</td>
+
+                            <td>$3</td>
+
+                        </tr>
+
+
+                        <tr data-category="pastries">
+
+                            <td>Butter Croissant</td>
+
+                            <td>Pastries</td>
+
+                            <td>$4</td>
+
+                        </tr>
+
+
+                        <tr data-category="drinks">
+
+                            <td>Classic Latte</td>
+
+                            <td>Drinks</td>
+
+                            <td>$5</td>
+
+                        </tr>
+
+
+                        <tr data-category="pastries">
+
+                            <td>Chocolate Muffin</td>
+
+                            <td>Pastries</td>
+
+                            <td>$4</td>
+
+                        </tr>
+
+
+                        <tr data-category="drinks">
+
+                            <td>Caramel Coffee</td>
+
+                            <td>Drinks</td>
+
+                            <td>$6</td>
+
+                        </tr>
+
+
+                        <tr data-category="pastries">
+
+                            <td>Cinnamon Roll</td>
+
+                            <td>Pastries</td>
+
+                            <td>$5</td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             TASK 4: INTERACTIVE ORDER CALCULATOR
+        ===================================================== -->
+
+        <section id="order"
+                 class="order-section">
+
+            <p class="section-label">
+                BUILD YOUR ORDER
+            </p>
+
+            <h2>
+                Select Your Favorite Items
+            </h2>
+
+            <p>
+                Select the items you want. The total price
+                will automatically update.
+            </p>
+
+
+            <div class="order-items">
+
+
+                <label>
+
+                    <input type="checkbox"
+                           class="menu-item"
+                           value="3">
+
+                    <span>
+                        Espresso
+                    </span>
+
+                    <strong>
+                        $3
+                    </strong>
+
+                </label>
+
+
+                <label>
+
+                    <input type="checkbox"
+                           class="menu-item"
+                           value="4">
+
+                    <span>
+                        Butter Croissant
+                    </span>
+
+                    <strong>
+                        $4
+                    </strong>
+
+                </label>
+
+
+                <label>
+
+                    <input type="checkbox"
+                           class="menu-item"
+                           value="5">
+
+                    <span>
+                        Classic Latte
+                    </span>
+
+                    <strong>
+                        $5
+                    </strong>
+
+                </label>
+
+
+                <label>
+
+                    <input type="checkbox"
+                           class="menu-item"
+                           value="4">
+
+                    <span>
+                        Chocolate Muffin
+                    </span>
+
+                    <strong>
+                        $4
+                    </strong>
+
+                </label>
+
+
+                <label>
+
+                    <input type="checkbox"
+                           class="menu-item"
+                           value="6">
+
+                    <span>
+                        Caramel Coffee
+                    </span>
+
+                    <strong>
+                        $6
+                    </strong>
+
+                </label>
+
+
+                <label>
+
+                    <input type="checkbox"
+                           class="menu-item"
+                           value="5">
+
+                    <span>
+                        Cinnamon Roll
+                    </span>
+
+                    <strong>
+                        $5
+                    </strong>
+
+                </label>
+
+
+            </div>
+
+
+            <div class="total-box">
+
+                <p id="total">
+                    Total: $0
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             TASK 5: AGE VERIFICATION
+        ===================================================== -->
+
+        <section class="discount-section">
+
+            <p class="section-label">
+                SPECIAL DISCOUNTS
+            </p>
+
+            <h2>
+                Check Your Discount
+            </h2>
+
+            <p>
+                Enter your birth year to see whether you qualify
+                for our student or senior discount.
+            </p>
+
+
+            <label for="birth-year">
+                Birth Year:
+            </label>
+
+            <input type="text"
+                   id="birth-year"
+                   placeholder="Example: 2002">
+
+
+            <p id="discount-message">
+            </p>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             TASK 6: READ MORE / READ LESS
+        ===================================================== -->
+
+        <section class="story-section">
+
+            <p class="section-label">
+                OUR STORY
+            </p>
+
+            <h2>
+                More About Sarah's Coffee Corner
+            </h2>
+
+
+            <article>
+
+                <p>
+                    Sarah's Coffee Corner started with a simple
+                    idea: create a peaceful place where people
+                    can enjoy good coffee and good company.
+                </p>
+
+
+                <p id="extra-story"
+                   class="hidden">
+
+                    Our café welcomes students, families,
+                    professionals and friends. We focus on
+                    fresh ingredients, friendly service and
+                    creating a comfortable atmosphere where
+                    every customer feels welcome.
+
+                </p>
+
+
+                <button id="read-more-btn">
+                    Read More
+                </button>
+
+            </article>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             TASK 1: FORM HANDLING & VALIDATION
+        ===================================================== -->
+
+        <section id="contact"
+                 class="contact-section">
+
+            <p class="section-label">
+                CONTACT & FEEDBACK
+            </p>
+
+            <h2>
+                Tell Us About Your Experience
+            </h2>
+
+            <form id="feedback-form">
+
+
+                <div class="form-row">
+
+
+                    <div class="form-group">
+
+                        <label for="username">
+                            Your Name
+                        </label>
+
+                        <input type="text"
+                               id="username"
+                               placeholder="Enter your name">
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input type="email"
+                               id="email"
+                               placeholder="Enter your email">
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- RADIO BUTTON REQUIREMENT -->
+
+                <div class="form-group">
+
+                    <p>
+                        <strong>
+                            Preferred Visit Time:
+                        </strong>
+                    </p>
+
+
+                    <label class="inline-option">
+
+                        <input type="radio"
+                               name="visit-time"
+                               value="Morning">
+
+                        Morning
+
+                    </label>
+
+
+                    <label class="inline-option">
+
+                        <input type="radio"
+                               name="visit-time"
+                               value="Evening">
+
+                        Evening
+
+                    </label>
+
+                </div>
+
+
+
+                <!-- CHECKBOX REQUIREMENT -->
+
+                <div class="form-group">
+
+                    <label class="inline-option">
+
+                        <input type="checkbox"
+                               id="newsletter">
+
+                        Subscribe me to café updates
+
+                    </label>
+
+                </div>
+
+
+                <button type="submit"
+                        class="submit-btn">
+                    Submit Feedback
+                </button>
+
+
+            </form>
+
+
+            <p id="form-message">
+            </p>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             TASK 9: CHARACTER COUNTER
+        ===================================================== -->
+
+        <section class="notes-section">
+
+            <p class="section-label">
+                SPECIAL REQUEST
+            </p>
+
+            <h2>
+                Add a Special Note
+            </h2>
+
+            <p>
+                Have a special request? Write it below.
+            </p>
+
+
+            <textarea id="special-notes"
+                      maxlength="100"
+                      rows="6"
+                      placeholder="Example: Please make my coffee less sweet..."></textarea>
+
+
+            <p id="char-count">
+                100 characters remaining
+            </p>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             EXTRA WORKING LINKS
+        ===================================================== -->
+
+        <section class="links-section">
+
+            <p class="section-label">
+                QUICK LINKS
+            </p>
+
+            <h2>
+                Explore Sarah's Cafe
+            </h2>
+
+            <p>
+                Use these links to navigate around the website.
+            </p>
+
+
+            <div class="quick-links">
+
+                <a href="#home">
+                    Back to Home
+                </a>
+
+                <a href="#menu">
+                    View Menu
+                </a>
+
+                <a href="#order">
+                    Place an Order
+                </a>
+
+                <a href="#contact">
+                    Contact Us
+                </a>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ===================================================== -->
+
+    <footer>
+
+        <h2>
+            ☕ Sarah's Coffee Corner
+        </h2>
+
+        <p>
+            Fresh Coffee • Fresh Pastries • Happy Moments
+        </p>
+
+        <p>
+            Open Daily: 8:00 AM - 10:00 PM
+        </p>
+
+        <p>
+            © 2026 Sarah's Coffee Corner
+        </p>
+
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
